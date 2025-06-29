@@ -1,0 +1,667 @@
+.page-container {
+    padding: 2rem;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.receipt-section-ptt {
+    background-color: #ffffff;
+    /* White background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    width: 90%;
+    /* Match the width of the "Danh Sách Các Hóa Đơn" page */
+    margin: 0 auto;
+    /* Center the section */
+}
+
+.search-section-ptt {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-bar-ptt {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-ptt:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.receipt-table-container-ptt {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem; /* Thêm padding-bottom để tránh đè lên */
+}
+
+.receipt-table-ptt {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.receipt-table-ptt table {
+          width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  /* Center-align all content */
+  table-layout: fixed;
+  /* Enable fixed column widths */
+  font-size: 0.8rem;
+  /* Reduce font size to 80% */
+}
+
+.receipt-table-ptt th {
+        background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    font-weight: bold;
+}
+
+.receipt-table-ptt td {
+    padding: 1.2rem;
+    /* Increase padding for better height */
+    border-bottom: 0.1rem solid #ccc;
+    /* Only horizontal borders */
+}
+
+.receipt-table-ptt th, 
+.receipt-table-ptt td {
+        text-align: center;
+    /* Center-align cell content */
+    font-size: 0.8rem;
+}
+
+.receipt-table-ptt th:nth-child(1),
+.receipt-table-ptt td:nth-child(1) {
+    width: 5%;
+    /* Light gray background for even rows */
+}
+
+.receipt-table-ptt th:nth-child(2),
+.receipt-table-ptt td:nth-child(2) {
+    width: 10%;
+    /* Light gray background for even rows */
+}
+.receipt-table-ptt th:nth-child(3),
+.receipt-table-ptt td:nth-child(3) {
+    width: 10%;
+    /* Light gray background for even rows */
+}
+.receipt-table-ptt th:nth-child(4),
+.receipt-table-ptt td:nth-child(4) {
+    width: 15%;
+    /* Light gray background for even rows */
+}
+.receipt-table-ptt th:nth-child(5),
+.receipt-table-ptt td:nth-child(5) {
+    width: 10%;
+    /* Light gray background for even rows */
+}
+.receipt-table-ptt th:nth-child(6),
+.receipt-table-ptt td:nth-child(6) {
+    width: 15%;
+    /* Light gray background for even rows */
+}
+.receipt-table-ptt th:nth-child(7),
+.receipt-table-ptt td:nth-child(7) {
+    width: 15%;
+    /* Light gray background for even rows */
+}   
+.receipt-table-ptt th:nth-child(8),
+.receipt-table-ptt td:nth-child(8) {
+    width: 10%;
+    /* Light gray background for even rows */
+}
+.receipt-table-ptt th:nth-child(9),
+.receipt-table-ptt td:nth-child(9) {
+    width: 10%;
+    /* Light gray background for even rows */
+}   
+
+.icon-button-ptt {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.icon-button-ptt:hover {
+    background-color: #0056b3;
+}
+
+.modal-ptt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content-ptt {
+    width: 90%;
+    /* Increase modal width */
+    max-width: 1200px;
+    /* Set a larger maximum width */
+    margin: 0 auto;
+    /* Center the modal */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    /* Align text to the left */
+}
+
+.modal-title-ptt {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.modal-columns-ptt {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.modal-left-ptt,
+.modal-right-ptt {
+    flex: 1;
+    text-align: left;
+    /* Align text to the left */
+    padding: 1rem;
+    /* Add padding for spacing */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: transparent;
+    /* Remove background color */
+    color: #333;
+    /* Default text color */
+}
+
+.modal-left-ptt p,
+.modal-right-ptt p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    /* Adjust font size for readability */
+    font-weight: normal;
+    /* Normal text weight */
+}
+
+.section-header-ptt {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    text-align: center;
+    /* Center-align text */
+    padding: 0.5rem;
+    /* Add padding for spacing */
+    border-radius: 8px;
+    /* Rounded corners */
+    font-size: 1.2rem;
+    /* Slightly larger font size */
+    font-weight: bold;
+    /* Bold text */
+    margin-bottom: 1rem;
+    /* Add spacing below the header */
+}
+
+.modal-table-ptt {
+    width: 100%;
+    /* Use full width of the modal */
+    margin: 0 auto;
+    /* Center the table */
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+}
+
+.modal-table-ptt th,
+.modal-table-ptt td {
+    padding: 0.75rem;
+    text-align: center;
+    /* Center-align text */
+    border-bottom: 1px solid #ddd;
+    /* Add horizontal borders */
+    font-size: 1rem;
+    /* Adjust font size for better readability */
+}
+
+.modal-table-ptt th {
+    background-color: #4CAF50;
+    /* Green background for table headers */
+    color: white;
+    /* White text */
+    font-weight: bold;
+}
+
+.modal-actions-ptt {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.close-button-ptt {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.close-button-ptt:hover {
+    background-color: #5a6268;
+}
+
+.print-button-ptt {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.print-button-ptt:hover {
+    background-color: #218838;
+}
+
+.modal-header-ptt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.save-button-ptt {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.save-button-ptt:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+.edit-buttons-ptt{
+      display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.edit-button-ptt {
+cursor: pointer;
+  transition: color 0.2s;
+  font-size: 0.9rem; /* Canh giữa nút trong ô */
+}
+
+.edit-button-ptt:hover {
+  color: #0056b3;
+}
+
+/* Các style khác của PhieuThuTien */
+.delete-button-ptt {
+    background-color: #dc3545;
+    /* Red background */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.delete-button-ptt:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+.modal-actions-ptt button {
+    width: 100px;
+    /* Set equal width for all buttons */
+    height: 40px;
+    /* Set equal height for all buttons */
+    padding: 0.5rem;
+    /* Ensure consistent padding */
+    font-size: 1rem;
+    /* Ensure consistent font size */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
+}
+
+.confirmation-modal-ptt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+}
+
+.confirmation-content-ptt {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    /* Fixed width for the modal */
+}
+
+.confirmation-content-ptt p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-actions-ptt {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.confirm-button-ptt,
+.cancel-button-ptt {
+    background-color: #007bff;
+    /* Blue for confirm button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.confirm-button-ptt:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.cancel-button-ptt {
+    background-color: #6c757d;
+    /* Gray for cancel button */
+}
+
+.cancel-button-ptt:hover {
+    background-color: #5a6268;
+    /* Darker gray on hover */
+}
+
+.notification-modal-ptt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+}
+
+.notification-content-ptt {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    /* Fixed width for the modal */
+}
+
+.notification-content-ptt p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.notification-content-ptt strong {
+    color: #007bff;
+    /* Highlight the receipt ID in blue */
+}
+
+.notification-content-ptt .close-button-ptt {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.notification-content-ptt .close-button-ptt:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Thanh tìm kiếm - giống với TatCaSach */
+.search-filter-block-ptt {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-filter-block-ptt input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+    min-width: 300px;
+}
+
+/* Pagination buttons - giống với TatCaSach */
+.pagination-buttons-ptt {
+  position: absolute;
+  bottom: 0;
+  right: 0.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 2.8rem;
+  background-color: white; /* Thêm background để tránh trong suốt */
+  z-index: 10;
+  min-width: 250px;
+  transform: translateX(1%);
+}
+
+.pagination-button-ptt-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+  min-width: 32px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  line-height: 1;
+}
+
+.pagination-button-ptt-button:hover:not(:disabled) {
+  background-color: #5a92d6;
+  transform: translateY(-1px);
+}
+
+.pagination-button-ptt-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.pagination-info-ptt {
+  margin: 0;
+  font-size: 0.8rem;
+  padding: 0 0.25rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.filter-button-ptt {
+    padding: 0.8rem 1rem;
+    background-color: #4296f0;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.filter-button-ptt.active-filter-ptt {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.filter-button-ptt:hover {
+    background-color: #0056b3;
+}
+
+.modal-new-ptt {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 30rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.modal-overlay-ptt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-title-new-ptt {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+.modal-buttons-ptt {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;
+    
+}
+
+.apply-button-ptt,
+.cancel-button-new-ptt,
+.close-button-new-ptt {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.apply-button-ptt {
+    background-color: #28a745;
+    color: white;
+}
+
+.apply-button-ptt:hover {
+    background-color: #218838;
+}
+
+.cancel-button-new-ptt {
+    background-color: #ffc107;
+    color: black;
+}
+
+.cancel-button-new-ptt:hover {
+    background-color: #e0a800;
+}
+
+.close-button-new-ptt {
+    background-color: #dc3545;
+    color: white;
+}
+
+.close-button-new-ptt:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,115 @@
+.modal-overlay-mns {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-mns {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content-mns h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group-mns {
+  margin-bottom: 15px;
+}
+
+.form-group-mns label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group-mns input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.form-group-mns input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.modal-actions-mns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-actions-mns button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-actions-mns button:first-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.modal-actions-mns button:first-child:hover {
+  background-color: #c82333;
+}
+
+.modal-actions-mns button:last-child {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-actions-mns button:last-child:hover {
+  background-color: #0056b3;
+}
+
+.error-message-mns {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+input[readonly] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+input.valid {
+  background-color: #e8f5e9;
+  border-color: #28a745;
+}
+
+input::placeholder {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.readonly-date {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}

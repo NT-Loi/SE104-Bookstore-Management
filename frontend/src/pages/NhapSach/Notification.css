@@ -1,0 +1,95 @@
+.notification-container-nons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.notification-icon-nons{
+      background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    min-width: 350px;
+    box-shadow: 0 0.5rem 1.5rem rgba(90, 84, 84, 0.3);
+    animation: fadeInUp 0.4s ease-out;
+    position: relative; /* Ensure it's positioned correctly */
+}
+
+.notitifitciaon-content-nons {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    min-width: 350px;
+    box-shadow: 0 0.5rem 1.5rem rgba(90, 84, 84, 0.3);
+    animation: fadeInUp 0.4s ease-out;
+    position: relative; /* Ensure it's positioned correctly */
+}
+.notification-container-nons.success {
+  border-top: None; /* Màu xanh cho thành công */
+}
+
+.notification-container-nons.error {
+  border-top: None; /* Màu đỏ cho thất bại */
+}
+
+.notification-message-nons {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+
+.notification-actions-nons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.notification-btn-nons {
+    padding: 0.5rem 1rem;
+    background-color: #6C757D;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.success-btn-nons {
+  background-color: #4880ff;
+  color: #fff;
+}
+
+.success-btn-nons:hover {
+  background-color: #0056b3;
+}
+
+.retry-btn-nons {
+  background-color: #ff6666;
+  color: #fff;
+}
+
+.retry-btn-nons:hover {
+  background-color: #cc0000;
+}
+
+.close-btn-nons {
+  background-color: #888;
+  color: #fff;
+}
+
+.close-btn-nons:hover {
+  background-color: #555;
+}

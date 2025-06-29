@@ -1,0 +1,225 @@
+/* Container chính cho nội dung trang chủ */
+.trang-chu-content {
+  /* margin: 20px; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box; */
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* Phần tổng quan */
+.overview {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding: 0 1.25rem;
+}
+
+.overview-header select {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.overview-title {
+  font-size: 2rem;
+  color: #4880ff;
+}
+
+/* Stats container */
+.overview-stats {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  padding: 0 1.25rem;
+}
+
+.stat-item {
+  background-color: #f9f9f9;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 6.25rem; /* Add fixed minimum height */
+}
+/* Chart container specific styling */
+div:not(.overview-stats) > .stat-item {
+  flex: none;
+  width: calc(100% - 2.5rem);
+  margin: 2rem auto 0; /* Center horizontally and add top margin */
+  background-color: #f9f9f9;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center; /* Center chart horizontally */
+  align-items: center; /* Center chart vertically */
+}
+
+/* Style for the chart itself */
+div:not(.overview-stats) > .stat-item > div {
+  width: 100%;
+  height: 400px;
+}
+/* Chart specific styling */
+/* .stat-item:last-child {
+  flex: none; 
+  width: calc(100% - 2.5rem); 
+  margin-top: 2rem; 
+  background-color: #f9f9f9;
+} */
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4880ff;
+  line-height: 1.2;
+}
+
+/* Phần biểu đồ */
+.chart {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.chart-item {
+  background-color: #f9f9f9;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  min-height: 450px; 
+}
+
+.chart-item div {
+  width: 100%;
+  height: 100%;
+}
+
+.no-data-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.ap-dung-trang-chu {
+  /* background-color: #f1f4f9;
+ */
+  background-color:#ffffff;
+  color: #4880ff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(115, 173, 239, 0.12);
+}
+
+.ap-dung-trang-chu:hover {
+  background-color: #5a92d6;
+  color: white
+}
+
+@media (min-width: 992px) {
+  .chart-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .chart-item {
+    flex: 1 0 calc(50% - 2rem);
+    min-width: 450px;
+  }
+  
+  .chart-item:last-child {
+    flex-basis: 100%;
+  }
+}
+
+.sidebar {
+  width: 250px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+  }
+
+  /* Nội dung chính */
+  .trang-chu-content {
+    margin-left: 200px; /* Đồng bộ với chiều rộng của sidebar */
+  }
+
+  /* Biểu đồ */
+  .chart-container {
+    height: 200px; /* Giảm chiều cao biểu đồ */
+  }
+
+  .chart-placeholder {
+    font-size: 12px; /* Giảm kích thước chữ trong placeholder */
+  }
+
+  /* Tổng quan */
+  .overview-header select {
+    font-size: 12px; /* Giảm kích thước chữ trong dropdown */
+  }
+
+  .stat-item {
+    padding: 15px; /* Giảm padding trong các ô thống kê */
+  }
+
+  .stat-value {
+    font-size: 24px; /* Giảm kích thước chữ của giá trị */
+  }
+}

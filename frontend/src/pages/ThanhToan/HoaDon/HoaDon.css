@@ -1,0 +1,747 @@
+.edit-button-thd {
+    background-color: #6d006d;
+    /* Pink background for edit button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.edit-button-thd:hover {
+    background-color: #ff1493;
+    /* Darker pink on hover */
+}
+
+.delete-button-thd {
+    background-color: #dc3545;
+    /* Red background for delete button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.delete-button-thd:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+.modal-thd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.modal-content-thd {
+    width: 80%; /* Increase modal width */
+    max-width: 900px; /* Set a maximum width */
+    max-height: 80vh; /* Set a maximum height (80% of viewport height) */
+    margin: 0 auto; /* Center the modal */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align text to the left */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.modal-content-thd h2 {
+    margin-bottom: 2rem;
+}
+
+.modal-content-thd h3 {
+    text-align: center;
+    /* Center the heading */
+    font-size: 1.2rem;
+    /* Adjust font size for better visibility */
+    font-weight: bold;
+    /* Make the heading bold */
+    margin-bottom: 1rem;
+    /* Add spacing below the heading */
+}
+
+.confirmation-modal-thd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirmation-content-thd {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation-content-thd p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.confirmation-actions-thd {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.confirm-button-thd,
+.cancel-button-thd {
+    background-color: #007bff;
+    /* Blue for confirm button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.confirm-button-thd:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.cancel-button-thd {
+    background-color: #6c757d;
+    /* Gray for cancel button */
+}
+
+.cancel-button-thd:hover {
+    background-color: #5a6268;
+    /* Darker gray on hover */
+}
+
+.close-button-thd {
+    background-color: #6c757d;
+    /* Gray background for close button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.close-button-thd:hover {
+    background-color: #5a6268;
+    /* Darker gray on hover */
+}
+
+.print-button-thd {
+    background-color: #28a745;
+    /* Green background for print button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.print-button-thd:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+.invoice-section-thd {
+    background-color: #ffffff;
+    /* White background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem !important;
+    /* Adjust this value to change the spacing between divs */
+}
+
+/* Thanh tìm kiếm - giống với PhieuThuTien */
+.search-filter-block-thd {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-filter-block-thd input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+    min-width: 300px;
+}
+
+/* Giữ lại phần search-section-thd cũ để tương thích ngược */
+.search-section-thd {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-bar-thd {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-thd:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.invoice-table-container-thd {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem; /* Thêm padding-bottom để tránh đè lên */
+}
+
+.invoice-table-thd {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.invoice-table-thd table {
+      width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  /* Center-align all content */
+  table-layout: fixed;
+  /* Enable fixed column widths */
+  font-size: 0.8rem;
+  /* Reduce font size to 80% */
+}
+
+.invoice-table-thd th {
+        background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    font-weight: bold;
+}
+
+
+.invoice-table-thd th,
+.invoice-table-thd td {
+    text-align: center;
+    /* Center-align cell content */
+    font-size: 0.8rem;
+}
+
+.invoice-table-thd td {
+    padding: 1.2rem;
+    /* Increase padding for better height */
+    border-bottom: 0.01rem solid #ccc;
+    /* Only horizontal borders */
+}
+
+.invoice-table-thd th:nth-child(1),
+.invoice-table-thd td:nth-child(1) {
+    width: 5%;
+    /* Set width for the first column */
+}
+
+.invoice-table-thd th:nth-child(2),
+.invoice-table-thd td:nth-child(2) {
+    width: 10%;
+    /* Set width for the second column */
+}
+
+.invoice-table-thd th:nth-child(3),
+.invoice-table-thd td:nth-child(3) {
+    width: 10%;
+    /* Set width for the third column */
+}
+
+.invoice-table-thd th:nth-child(4),
+.invoice-table-thd td:nth-child(4) {
+    width: 15%;
+    /* Set width for the fourth column */
+}
+
+.invoice-table-thd th:nth-child(5),
+.invoice-table-thd td:nth-child(5) {
+    width: 10%;
+    /* Set width for the fifth column */
+}
+
+.invoice-table-thd th:nth-child(6),
+.invoice-table-thd td:nth-child(6) {
+    width: 13%;
+    /* Set width for the sixth column */
+}
+
+.invoice-table-thd th:nth-child(7),
+.invoice-table-thd td:nth-child(7) {
+    width: 13%;
+    /* Set width for the seventh column */
+}
+
+.invoice-table-thd th:nth-child(8),
+.invoice-table-thd td:nth-child(8) {
+    width: 14%;
+    /* Set width for the eighth column */
+}
+
+.invoice-table-thd th:nth-child(9),
+.invoice-table-thd td:nth-child(9) {
+    width: 10%;
+    /* Set width for the ninth column */
+}
+
+.view-button-thd {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.view-button-thd:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.modal-columns-thd {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* Add spacing between columns */
+    margin-bottom: 1.5rem;
+}
+
+.modal-left-thd,
+.modal-right-thd {
+    flex: 1;
+    padding: 0;
+    /* Remove padding */
+}
+
+.modal-left-thd p,
+.modal-right-thd p {
+    margin-bottom: 1rem;
+    /* Add spacing between rows */
+}
+
+.section-header-thd {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+    /* Dark gray text */
+    background: #007bff;
+    padding-top: 0.2rem;
+    /* Add spacing above the header */
+    padding-bottom: 0.2rem
+}
+
+.invoice-header-thd,
+.customer-header-thd {
+    background-color: #87CEEB;
+    /* Light blue background */
+    color: white;
+    padding: 1rem;
+    /* Increase padding for a wider background */
+    border-radius: 8px;
+    /* Adjust border radius for a smoother look */
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.modal-title-thd {
+    text-align: center;
+    /* Center the title */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* Add spacing below the title */
+}
+
+.modal-left-thd {
+    flex: 1;
+    text-align: left;
+    /* Align text to the left */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: transparent;
+    /* Remove background color */
+    color: #333;
+    /* Default text color */
+}
+
+.edit-button-thd {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto; /* Canh giữa nút trong ô */
+}
+
+.edit-button-thd:hover {
+    background-color: #0069d9;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.edit-button-thd svg {
+    font-size: 16px;
+}
+
+/* Giữ lại style cũ cho icon-button-thd để tương thích ngược */
+.icon-button-thd {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-table-thd {
+    width: 100%;
+    /* Full width */
+    border-collapse: collapse;
+    /* Remove gaps between table cells */
+    margin-bottom: 2rem;
+    /* Add spacing above the table */
+
+}
+
+.modal-table-thd th {
+    /*background-color: #4CAF50;  Green background for table headers */
+    /*color: white;  White text */
+    text-align: center;
+    /* Center-align header text */
+    /*padding: 0.75rem;  Add padding for spacing */
+    font-weight: bold;
+    /* Bold text */
+    border-bottom: 1px solid #ddd;
+    /* Add a border below the header */
+}
+
+.modal-table-thd td {
+    text-align: center;
+    /* Center-align table content */
+    padding: 0.75rem;
+    /* Add padding for spacing */
+    border-bottom: 1px solid #ddd;
+    /* Add a border below each row */
+    font-size: 1rem;
+    /* Adjust font size for readability */
+}
+
+.modal-totals-thd {
+    text-align: right;
+    /* Align text to the right */
+    font-weight: bold;
+    /* Make text bold */
+    font-size: 1rem;
+    /* Adjust font size for readability */
+    line-height: 1.75rem;
+    /* Add spacing between lines (0.5rem) */
+    margin-bottom: 1rem;
+    ;
+}
+
+.modal-actions-thd {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    align-items: center;
+    /* Center buttons vertically */
+    gap: 1rem;
+    /* Add spacing between buttons */
+    margin-top: 2rem;
+    /* Add spacing above the buttons */
+}
+
+/* Pagination buttons - giống với PhieuThuTien */
+.pagination-buttons-thd {
+  position: absolute;
+  bottom: 0;
+  right: 0.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 2.8rem;
+  background-color: white; /* Thêm background để tránh trong suốt */
+  z-index: 10;
+  min-width: 250px;
+  transform: translateX(1%);
+}
+
+.pagination-buttons-thd-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+  min-width: 32px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  line-height: 1;
+}
+
+.pagination-buttons-thd-button:hover:not(:disabled) {
+  background-color: #5a92d6;
+  transform: translateY(-1px);
+}
+
+.pagination-buttons-thd-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.pagination-info-thd {
+  margin: 0;
+  font-size: 0.8rem;
+  padding: 0 0.25rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Giữ lại các class cũ để tương thích ngược */
+.pagination-button-thd {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination-button-thd:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sort-button-thd {
+    background-color: #007bff;
+    /* Blue background for sort button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sort-button-thd:hover {
+    background-color: #0056b3 !important;
+}
+
+.sort-button-thd:active {
+    background-color: #004085 !important;
+}
+
+.action-buttons-thd {
+          display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.action-button-thd {
+    cursor: pointer;
+  transition: color 0.2s;
+  font-size: 0.9rem; /* Canh giữa nút trong ô */
+}
+
+.action-button-thd:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.filter-button-hd {
+    padding: 0.8rem 1rem;
+    background-color: #4296f0;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.filter-button-hd.active-filter-ns {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.filter-button-hd:hover {
+    background-color: #0056b3;
+}
+
+.modal-new-hd {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 30rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.modal-overlay-hd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-title-new-hd {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+.modal-buttons-hd {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;
+    
+}
+
+.apply-button-hd,
+.cancel-button-new-hd,
+.close-button-new-hd {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.apply-button-ns {
+    background-color: #28a745;
+    color: white;
+}
+
+.apply-button-hd:hover {
+    background-color: #218838;
+}
+
+.cancel-button-new-hd {
+    background-color: #ffc107;
+    color: black;
+}
+
+.cancel-button-new-hd:hover {
+    background-color: #e0a800;
+}
+
+.close-button-new-hd {
+    background-color: #dc3545;
+    color: white;
+}
+
+.close-button-new-hd:hover {
+    background-color: #c82333;
+}
+
+.active-filters-hd {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.active-filter-tag-hd {
+    background-color: #007bff;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.remove-filter-hd {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    line-height: 1;
+}
+
+.remove-filter-hd:hover {
+    color: #ccc;
+}
